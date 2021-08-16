@@ -1,0 +1,172 @@
+
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+	background-color:#e6e6e6
+}
+/*header*/
+.signIn{
+	display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: .5rem 2rem;
+    gap: .5rem;
+}
+.signIn button{
+	background:#0066ff;
+	border-radius: 3px ;
+	border: 3px solid #0066ff;
+    border-color: #0077c5;
+	height: 30px;
+	width: 120px;
+}
+.signIn img{
+	height: 20px;
+}
+
+form{
+	border:  1px solid #c6c7cc;
+	/*border-radius: 5px;*/
+	font:  14px/1.4 "Helvetica Neue", Helvetica, Ariel , sans-serif;
+	overflow: hidden;
+	width: 400px;
+	height: auto;
+	align: center;
+	background-color: white;
+	margin: 0 auto;
+	
+
+
+}
+fieldset{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+input{
+	border-radius:3px; 
+	/*margin:20px 0px 0px 20px;*/
+	width: 300px ;
+	height: 35px;
+
+}
+.account p, a{
+		font-size: 10px;
+		margin: 0 auto;
+}
+.account-info{
+	padding: 20px 20px 20px 20px;
+
+}
+.account-info label{
+
+	color: black;
+	display: block;
+	margin-top: 30px;
+
+}
+.account-info input{
+	background: #fff;
+	border: 1px light #c6c7cc;
+	box-shadow: inset 0px  ;
+	color: #636466;
+	margin-top: 10px;
+	width: 100%;
+
+
+}
+.account-action button{
+	margin-top: 20px;
+	color: white;
+	background:#0066ff;
+	border-radius: 3px ;
+	border: 3px solid #0066ff;
+    border-color: #0077c5;
+	height: 40px;
+	width: 100%;
+
+
+}
+.account-action img{
+	height: 20px;
+}
+.account-action button:hover{
+	background: #0066ff;
+}
+.account-info h3, p{
+	text-align: center;
+}
+.emailLabel p{
+	text-align: left;
+}
+.phoneLabel p{
+	text-align: left;
+}
+
+.formFooter p{
+	margin-top: 20px;
+	font-style: italic;
+}
+.formFoot{
+	background: #e6e6e6;
+	height: 50px;
+	width: 100% ;
+}
+.formFoot p{
+	/*margin-top: 30px;*/
+	/*background-color:  #e6e6e6;*/
+	font-size: 10px;
+	padding-top: 15px;
+	
+}
+footer{
+	margin-top: 20px;
+}
+footer a{
+	font-size: 13px;
+
+}
+footer p{
+	font-size: 13px;
+	margin: 0 auto;
+}
+
+footer p:first-child{
+	padding-top: 10px;
+}
+.passLabel p{
+	text-align: left;
+}
+.passGuide p{
+	text-align: left;
+
+}
+.passGuide{
+	display: none;
+}
+.confirmPassword p{
+	text-align: left;
+}
+/*.formClass{
+	padding-left: 500px ;
+	padding-right: 200px;
+}*/
+/*input#unlock {
+	background-image: url('../images/unlock.png');
+	background-size: contain;
+	background-repeat: no-repeat 8px center;
+	text-indent: 20px;
+	al: flex-end;
+}
+input#unlock:focus {
+	background-image:none ;
+	text-indent: 0px;
+}
+*/

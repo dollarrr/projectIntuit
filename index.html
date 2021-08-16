@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="TOP Challenge. Intuit Sign Up Form Clone">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML CSS">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Intuit Accounts - Sign Up</title>
+</head>
+<body style="background-color: #e6e6e6;"> 
+		<!-- PAGE - HEADER -->
+    <header>
+        <nav>
+            <div class="signIn">
+                <div class="account">
+                    <p>Already have an intuit account?</p>
+                    <a href="#">I forgot my User ID or Password</a>
+                </div>
+                <span><button href="" type="submit" name="submit" value="Create Account" ><img src="images/lock.png">Sign In</button></span>
+                   
+                </a>
+            </div>
+        </nav>
+    </header>
+
+        <!-- section -->
+      <section>
+        	
+        		<!-- <div class="intuitLogo">
+        			<a href=""><img src="images/ecosystem_logos_new@2x-9448e6be.png"></a>
+        		</div>
+ -->
+
+
+               
+                   
+
+    <form id="formClass" action="" onsubmit=" return emailValidate()" onclick="emailValidate()">
+        <fieldset class="account-info">
+            <h3>Create an Intuit account</h3>
+            <span>  
+                <p>One account for everything Intuit.<a href="">Learn More</a></p>
+            </span>
+            <label class="emailLabel">
+                Email address
+                <input type="email" name="email-address" id="email"  value="" size="32" oninput="" >
+                <p id="lbEmail"></p>
+            </label>
+
+            <label class="phoneLabel">
+                Phone (recommended)
+                <input type="tel" name="number" id="phone" value="+234" >
+                <p id="lbPhone"></p>
+                <span style="display: none;" id="phoneVerify">
+                    <input style="height: auto; width: auto; " type="checkbox" name="check">
+                      Verify with text message
+                </span>
+            </label>
+            <label class="passLabel">
+                Password
+                <input type="password" name="password"  id="password" onclick="verifyPassword()"  >
+                    <p id="lbPassword"></p>
+                <span id="passGuide" class="passGuide">
+                    <p>Use 8 or more Characters</p>
+                    <p>Use upper and lower case letters(e.g. Aa)</p>
+                    <p>Use a number(e.g. 1234)</p>
+                    <p>Use a symbol(e.g. !@#$)</p>
+                </span>
+            </label>
+            <label class="confirmPassword" id="passwordVerify" style="display: none;">
+                Confirm Password
+                <input type="password" name="confirmpassword" id="confirmPassword">
+                <p id="lbconfirmPassword"></p>
+            </label>
+
+            <span class="account-action">
+            <button href="" type="submit" name="submit" value="Create Account" id="submit" ><span><img src="images/lock.png" ></span>Create Account</button>
+            </span>
+            
+            <span class="formFooter">
+                <p>By selecting Create Account, you agree to our <a>Terms</a> and have read and acknowledge our <a>Global Privacy Statement</a>.</p>
+            </span>
+        </fieldset>
+         <div class="formFoot">
+          <p>Invisible reCAPTCHA by Google <a>Privacy Policy</a> and <a>Terms of Use</a>.</p>
+         </div>
+    </form>
+
+        </section> 
+        <footer>
+            <p><a href="">Legal</a> <a href="">Privacy</a> <a href="">Security</a></p>
+            <p>© 2021 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.</p>
+           <p> Terms and conditions, features, support, pricing, and service options subject to change without notice.</p>
+        </footer>
+        <script src = "js/jquery1.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+             
+         text2 = document.getElementById("password").value;
+         text3 = document.getElementById("confirmPassword").value;
+
+         function emailValidate(){
+             text = document.getElementById("email").value;
+             regEmail = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9]+).([a-z]{2,20})$/;
+             regPhone = /(^[0]\d{10}$)|(^[\+]?[234]\d{12}$)/;
+             regPassword = /^(?=.*?[A-Z])(?=.*?[a-z]{1,})(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$/;
+
+         if(regEmail.test(text)){
+
+                    document.getElementById("lbEmail").innerHTML = "";
+            }
+            else{
+                     document.getElementById("lbEmail").innerHTML = "please enter a valid email";
+                    document.getElementById("lbEmail").style.visibility = "visible";
+                    document.getElementById("lbEmail").style.color = "red";
+                    return false;
+                }
+
+  
+            text = document.getElementById("phone").value;
+            if (regPhone.test(text)) {
+                document.getElementById("lbPhone").innerHTML =  "";
+                
+            }else{
+                document.getElementById("lbPhone").innerHTML = "please enter a valid phone number";
+               // document.getElementById("lbPhone").style.visibility = "visible";
+                document.getElementById("lbPhone").style.color = "red";
+                return false;
+            }
+
+
+
+            text = document.getElementById("password").value;
+            if (regPassword.test(text)) {
+                document.getElementById("passGuide").style.display =  "none";
+                
+            }else{
+                document.getElementById("passGuide").style.display = "block";
+                return false;
+               
+            }
+
+                if (document.getElementById("password").value === document.getElementById("confirmPassword").value){
+                    document.getElementById("lbconfirmPassword").innerHTML = "";
+                          
+                }else{
+                    document.getElementById("lbconfirmPassword").innerHTML = "password mismatch";
+                    document.getElementById("lbconfirmPassword").style.color = "red";  
+                    return false;
+                }
+                
+            }
+            
+    
+
+
+    function verifyPassword(){
+        document.getElementById("passwordVerify");
+        document.getElementById("passwordVerify").style.display = "block";
+        document.getElementById("passGuide").style.display = "block";
+        document.getElementById("passGuide").style.color = "red";
+
+    }
+
+    
+
+        </script>
+</body>
+</html>

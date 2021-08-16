@@ -1,0 +1,111 @@
+body{
+    background: lightgrey;
+}
+.no-padding{
+    padding:0;
+}
+header{
+    background: lightblue;
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 10vh;
+}
+section{
+    background: white;
+    min-height: 75vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.blue{
+    min-height: 25vh;
+    background-color: royalblue;
+}
+.blue h1{
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 3px solid rgba(255, 255, 255, 0.3);
+    border-left: 3px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 9vh auto 0 auto;
+    padding: 5px;
+    width: 50%;
+}
+.second{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    min-height: 38vh;
+    background-color: white;
+}
+.second_right_up{
+    background-color: red;
+    margin-bottom: 0.5vh;
+    min-height: 28vh;
+    margin-right: 0.5%;
+}
+.second_right_down{
+    background-color: green;
+    margin-top: 0.5vh;
+    min-height: 10vh;
+    margin-right: 0.5%:;
+}
+
+.second_left_up
+{
+    margin-bottom: 0.5vh;
+    min-height: 10vh;
+    margin-right: 0.5%;
+}
+.second_left_down
+{
+    background-color:blue;
+    margin-top: 0.5vh;
+    min-height: 28vh;
+    margin-right: 0.5%; 
+}
+.second_left_up_left
+{
+	background-color: yellow;
+	margin-right: 0.5%;
+	min-height: 10vh;
+}
+
+.second_left_up_right
+{
+	background-color: blue;
+	margin-right: 0.5%;
+	min-height: 10vh;
+}
+
+.second_left_down_left
+{
+	background-color: yellow;
+	margin-right: 0.5%;
+	min-height: 10vh;
+}
+
+.second_left_down_right
+{
+	background-color: blue;
+	margin-right: 0.5%;
+	min-height: 10vh;
+}
+
+.third{
+    min-height: 10vh;
+    background-color: lightblue;
+}
+.third_left{
+    min-height: 10vh;
+    margin-right: 0.5%;
+    background-color: red;
+}
+.third_right{
+    min-height: 10vh;
+    margin-left: 0.5%;
+    background-color:green;
+}
+footer{
+    background: white;
+    min-height: 5vh;
+    padding-top: 5px;
+}
