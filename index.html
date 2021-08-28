@@ -62,7 +62,8 @@
             </label>
             <label class="passLabel">
                 Password
-                <input type="password" name="password"  id="password" onclick="verifyPassword()"  >
+                <input type="password" name="password"  id="password" onclick="verifyPassword()" 
+                >
                     <p id="lbPassword"></p>
                 <span id="passGuide" class="passGuide">
                     <p>Use 8 or more Characters</p>
@@ -96,8 +97,8 @@
             <p>© 2021 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.</p>
            <p> Terms and conditions, features, support, pricing, and service options subject to change without notice.</p>
         </footer>
-        <script src = "js/jquery1.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src = "js/jquery.js"></script>
+        <script src=""></script>
         <script>
              
          text2 = document.getElementById("password").value;
@@ -164,8 +165,12 @@
         document.getElementById("passGuide").style.display = "block";
         document.getElementById("passGuide").style.color = "red";
 
-    }
+    };
 
+            // $("#password").click(function(){
+            //     $("#confirmPassword").slideToggle();
+
+            // });
     
 
         </script>
